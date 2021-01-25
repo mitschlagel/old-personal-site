@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spencer Jones</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/slideshow.js"></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="header-top">
+        <div class="title">technologist and musician</div>
+      </div>
+      <div class="header-bottom">
+        <nav class="header-nav">
+          <a href="#resume">resume</a>
+          <a href="#portfolio">portfolio</a>
+          <a href="#">blog</a>
+          <a href="#music">music</a>
+          <a href="#contact">contact</a>
+        </nav>
+        <div id="first-name" class="name">spencer</div>
+      </div>
+    </header>
+    <main>
+
+      <!-- Last name is pasrt of main section, but placed below header -->
+      <section class="landing-image">
+        <div id="last-name" class="name">jones</div>
+        <div class="no-content">
+          
+          <a href="#resume">&#9002;</a>
+        </div>
+      </section>
+
+      <!-- Secondary nav for scrolling through each section -->
+       
+      <nav class="small-nav">
+        <a href="#home">home</a>
+        <a href="#resume">resume</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#">blog</a>
+        <a href="#music">music</a>
+        <a href="#contact">contact</a>
+        <div class="social-icons">
+          <a href="www.linkedin.com/in/spencer-jones-omaha">
+            <img src="img/icons/linkedin.png" class="icons" id="linkedin"/>
+          </a>
+          <a href="https://github.com/mitschlagel" >
+            <img src="img/icons/github.png" class="icons" id="github"/>
+          </a>
+          <a href="https://www.last.fm/user/Spormcer">
+            <img src="img/icons/lastfm.png" class="icons" id="lastfm"/>
+          </a>
+        </div>
+      </nav>
+      
+      
+      <!-- Start Resume-->
+
+      <section class="main-content" id="resume">
+          <article class="bio">
+            <div>
+            <h1>Spencer L. Jones</h1>
+            <em>Front-End Web Developer with Full-Stack Aspirations</em>
+            <p>
+              Graduate of AIM Code School<br />
+              Computer science student at Creighton Univeristy<br />
+              Classical percussionist and jazz drummer
+            </p>
+            <h1>Techincal Studies and Certifications</h1>
+            <p>
+              AIM Code School Foundations of Web Development<br />
+              CS50 Introduction to Computer Science<br />
+            </p>
+          </div>
+            <img
+              src="img/headshot.jpg"
+              alt="spencer's profile photo"
+              class="rounded"
+            />
+          </article>
+          <article class="skills">
+            <h1>Languages and Frameworks</h1>
+            <p>
+            Most Experience: 
+            <span class="skill-green">HTML5</span>
+            <span class="skill-green">CSS3</span><br />
+            </p>
+            <p>
+            Some Exeprience: 
+            <span class="skill-yellow">Python</span>
+            <span class="skill-yellow">JavaScript</span>
+            <span class="skill-yellow">jQuery</span>
+            <span class="skill-yellow">SQL (SQLite3)</span>
+            </p>
+            <p>
+            Academic Study:
+            <span class="skill-blue">Python</span>
+            <span class="skill-blue">Java</span>
+            <span class="skill-blue">C</span>
+            </p>
+          </article>
+          <article class="education">
+            <h1>Relevant Coursework</h1>
+            <p>
+            CSC 221 Introduction to Programming<br />
+            CSC 222 Object-Oriented Programming<br />
+            CSC 414 Computer Organization and Embedded Systems
+            </p>
+            <h1>Formal Education</h1>
+            <p>
+            Cerfiticate in Computer Science, Creighton University, 2020-2022<br />
+            Master of Music in Percussion Performance, University of Missouri-Kansas City Convervatory, 2010-2012<br />
+            Bachelor of Arts in Music, Minor in History, Oklahoma State University, 2006-2010
+            </p>
+          </article>
+          
+      </section>
+
+      <!-- End Resume -->
+
+      <hr>
+
+      <!-- Start Portfolio-->
+
+      <section class="main-content" id="portfolio">
+        <article class="portforlio-summary">
+          <h1>Portfolio</h1>
+          <p>
+            Below is a selection of projects from AIM Code School's Web Development Foundations.
+          </p>
+        <article class="gallery">
+          
+            <div class="current-slide">
+              <!-- Display current slide -->
+              <!-- href changes to link to project -->
+            </div>
+          <div class="caption">
+            Blanka Web Development: HTML5, CSS3
+          </div>
+          <div class="thumbnails">
+            <div class="row1">
+              <img src="img/portfolio/blanka.png" alt="Blanka Web Development: HTML5, CSS3" id="blanka">
+              <img src="img/portfolio/chipotle.png" alt="Remake of Chipotle Homepage: HTML5, CSS3, JavaScript, jQuery" id="chipotle">
+              <img src="img/portfolio/dsc.png" alt="Developer Style Conference: HTML5, CSS3" id="dsc">
+              <img src="img/portfolio/wombat.png" alt="Wombat Coffee: HTML5, CSS3, JavaScript, jQuery" id="wombat">
+            </div>
+            <div class="row2">
+              <img src="img/portfolio/todo.png" alt="ToDo List: HTML5, CSS3, JavaScript, jQuery" id="todo">
+              <img src="img/portfolio/calc.png" alt="JavaScript Calculator: HTML5, CSS3, JavaScript, jQuery" id="calc">
+              <img src="img/portfolio/interface.png" alt="Interface Web School: HTML5, CSS3" id="interface">
+              <img src="img/portfolio/scroll.png" alt="Scroll Effects: HTML5, CSS3, JavaScript, jQuery" id="scroll">
+            </div>
+          </div>
+        </article>          
+      </section>
+
+      <!-- End Portfolio -->
+
+      <hr>
+
+      <!-- Start Music -->
+
+      <section class="main-content" id="music">
+        <article class="music-header">
+            <h1>Music</h1>
+            <h3>Performer</h3>
+            <p>
+              Spencer is a classicaly tranined percussionist and timpanist, performing regularly with the Omaha and Kansas City Symphonies. Additionally, he has performed with the Indianapolis Symphony Orchestra, Hawai'i Symphony Orchestra, Des Moines Symphony, Lyric Opera of Kansas City, Quad City Symphony, and New World Symphony of Miami Beach, FL. 
+            </p>
+            <p>
+              He earned the Master of Music in Percussion Performance degree from The University of Missouri-Kansas City Conservatory of Music. He trained in orchestral and chamber music as a fellow at Music Academy of the West, National Orchestral Institute, and the Texas Music Festival, and he is a two-time alumnus of the Cloyd Duff Timpani Masterclass.
+            </p>
+            <h3>Teacher</h3>
+            <p>
+              Since 2016 Spencer has served on the Artist-Faculty of Omaha Conservatory of Music, where he teaches private lessons and directs percussion actvities. His students regularly make Nebraska All-State ensembles, win superior ratings at competitions, and have earned full-ride scholarships to college.  He is in-demand as an audition coach and has helped college and graduate students secure graduate school admission and win positions in regional orchestras.
+            </p>
+        </article>
+        <article class="spotify">
+          <p>Recommended Listening:</p>
+
+          <iframe src="https://open.spotify.com/embed/playlist/1JQhWvEOPSXvTyfSLUZUPP" width="300" height="580" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </article>
+        
+      </section>
+
+      <!-- End Music -->
+
+      <hr>
+
+      <!-- Start Contact -->
+
+      <section class="main-content" id="contact">
+        <article class="form-header">
+            <h1>Contact</h1>
+            <p>
+              Please reach out with any questions/comments/adulations.
+            </p>
+            <form action=""></form>
+
+        </article>
+      </section>
+    </main>
+    <footer>
+        
+    </footer>
+  </body>
+</html>
