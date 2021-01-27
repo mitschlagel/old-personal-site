@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@200;400;900&family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /********************************
 *          Global               *
@@ -11,8 +12,8 @@ body {
 }
 
 a {
+  font-size: 2rem;
   color: #000;
-  font-size: 1.6rem;
   text-decoration: none;
   padding-left: 1.5ch;
 }
@@ -34,8 +35,7 @@ a:active {
   margin-left: 20vw;
   width: 60vw;
   height: 100%;
-  font-size: 14px;
-
+  font-size: 15px;
 }
 
 .main-content h1 {
@@ -55,15 +55,19 @@ hr {
 *          Landing Page         *
 ********************************/
 
-header {
+.desktop-header {
   padding: 2vh 5vw 0 5vw;
   background-color: #fff;
   height: 25vh;
   font-family: "Playfair Display", serif;
-  font-weight: 900;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.mobile-banner {
+  display: none;
 }
 
 .header-top {
@@ -72,25 +76,44 @@ header {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 2rem;
-  color: rgba(72, 73, 75, 0.8);
 }
 
 .header-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
 }
 
-nav {
+.header-nav {
   text-decoration: none;
   padding-right: 5vw;
   padding-bottom: 1.4vw;
 }
 
+/* Media query to control responsive display */
+@media (max-width: 1000px) {
+  .header-top {
+    display: block;
+    position: absolute;
+    top: 2.8vh;
+    right: 5vh;
+  }
+
+  .header-bottom .header-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #first-name {
+    align-self: flex-end;
+  }
+}
+
 .name {
-  font-family: "Rubik Mono One", sans-serif;
-  font-size: 6rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 8rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -102,11 +125,10 @@ nav {
 
 #last-name {
   color: #fff;
-  
 }
 
 .landing-image {
-  padding: 0 5vw 0 0;
+  padding: 1vw 5vw 0 0;
   background-image: url("../img/background2.jpg");
   background-size: cover;
   background-position: top;
@@ -114,15 +136,18 @@ nav {
   background-attachment: fixed;
   height: 75vh;
   margin-bottom: 250px;
-  
 }
 
+.no-content {
+  height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
 .no-content > a {
   margin: 0;
   font-size: 6rem;
-  position: absolute;
-  bottom: 5px;
-  left: 45vw;
   color: white;
   font-family: "Open Sans", sans-serif;
   transform: rotate(90deg);
@@ -136,7 +161,7 @@ nav {
 }
 
 /********************************
-*          Side Nav             *
+*          Secondary Nav       *
 ********************************/
 
 .small-nav {
@@ -155,7 +180,7 @@ nav {
   position: fixed;
   left: 2vw;
   top: 3vh;
-  opacity: 1; 
+  opacity: 1;
   transform: none;
   visibility: visible;
 }
@@ -163,7 +188,7 @@ nav {
 .small-nav > a {
   font-size: 1.5rem;
   font-family: "Playfair Display", serif;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .social-icons {
@@ -200,42 +225,46 @@ img.icons {
 
 .bio {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.bio a {
+  font-size: 15px;
+  padding: 0;
 }
 
 .skills {
   margin-top: 0;
 }
+
 .skill-green {
   background-color: rgba(144, 238, 144, 0.5);
-  padding: 0.2rem 0.4rem;
+  padding: 0.1rem 0.4rem;
   border-radius: 8px;
 }
 
 .skill-yellow {
   background-color: rgba(255, 255, 0, 0.5);
-  padding: 0.2rem 0.4rem;
+  padding: 0.1rem 0.4rem;
   border-radius: 8px;
 }
 
-.skill-blue {
-  background-color: rgba(173, 216, 230, 0.5);
-  padding: 0.2rem 0.4rem;
+.skill-red {
+  background-color: rgba(236, 105, 105, 0.5);
+  padding: 0.1rem 0.4rem;
   border-radius: 8px;
 }
 
 img.rounded {
   height: 200px;
   width: 200px;
-  margin: 25px 0 0 15vw;
+  margin: 2rem 0 0 5rem;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0;
-  position: relative;
 }
-
 
 /********************************
 *          Portfolio            *
@@ -245,15 +274,12 @@ img.rounded {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-
   box-sizing: border-box;
 }
 
 .gallery a {
   margin: 0;
   padding: 0;
-  
 }
 
 .current-slide {
@@ -262,13 +288,12 @@ img.rounded {
   background-size: cover;
   width: 60vw; /* Width must be set so that div displays on initial load */
   height: 40vh;
-
 }
 
 .caption {
   width: 60vw;
   text-align: center;
-  background-color:#000;
+  background-color: #000;
   color: #fff;
   padding: 1.5ch 0;
 }
@@ -286,10 +311,9 @@ img.rounded {
   width: 14.5vw;
   opacity: 0.5;
   cursor: pointer;
- 
 }
 
-#portfolio  img:hover {
+#portfolio img:hover {
   opacity: 1;
 }
 
@@ -314,10 +338,8 @@ img.rounded {
 
 .spotify iframe {
   border: 1px solid #000;
+  height: 280px;
 }
-
-
-
 
 footer {
   height: 1000px;
@@ -325,5 +347,3 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-size: smaller;
 }
-
-
