@@ -36,14 +36,13 @@ a:active {
   margin-right: 0;
   padding-right: 0;
   width: 60vw;
-  height: 100%;
   font-size: 15px;
 }
 
 .main-content h1 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
@@ -343,12 +342,24 @@ img.rounded {
   height: 280px;
 }
 
-footer {
-  height: 1000px;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-size: smaller;
+.youtube-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
 }
+
+.youtube-container iframe,
+.youtube-container object,
+.youtube-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /********************************
 *          Contact                *
@@ -363,4 +374,14 @@ footer {
 .contact-form #submit {
   width: 5vw;
   margin-top: 2vh;
+}
+
+
+
+
+footer {
+  height: 1000px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: smaller;
 }
