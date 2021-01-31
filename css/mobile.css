@@ -10,6 +10,7 @@
   margin: 0;
   height: 100vh;
   background-position: right bottom;
+  background-attachment: scroll;
 }
 
 .main-content {
@@ -193,4 +194,11 @@ img.rounded {
 
 .contact-form #submit {
   width: 25vw;
+}
+
+
+
+
+footer {
+  margin: 0;
 }
