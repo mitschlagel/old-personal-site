@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@200;400;900&family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&family=Playfair+Display:wght@200;400;900&family=Rubik+Mono+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /********************************
@@ -166,12 +166,14 @@ hr {
 ********************************/
 
 .small-nav {
+  width: 10vw;
   position: fixed;
   left: 2vw;
   top: 3.5vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  text-align: left;
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
@@ -190,6 +192,16 @@ hr {
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
+
+.small-nav > div {
+  font-size: 0.8rem;
+  padding-top: 30px;
+}
+
+.small-nav div > span {
+  font-weight: 700;
+}
+
 
 /********************************
 *          Resume               *

@@ -52,6 +52,9 @@
           <!-- <a href="#blog">blog</a> -->
           <a href="#music">music</a>
           <a href="#contact">contact</a>
+          <div class="definition">
+            <span>mitschlagel:</span><br>mit Schlägel<br>"with mallet"
+          </div>
         </nav>
         
         
@@ -236,19 +239,19 @@
       <!-- Start Contact -->
 
       <section class="main-content" id="contact">
-        <article class="form-header">
+        <article class="form-container">
             <h1>contact</h1>
             <p>
               Please reach out with any jobs/questions/comments/adulations.
             </p>
 
-            <form class="contact-form">
-              <label for="name">Name: </label><input type="text" name="name" id="name" maxlength="100">
-              <label for="email">Email: </label><input type="email" name="email" id="email" maxlength="100">
+            <form method="POST" action="contact.php" class="contact-form">
+              <label for="name">Name: </label><input type="text" name="Name" id="name" maxlength="100">
+              <label for="email">Email: </label><input type="text" name="Email" id="email" maxlength="100">
               
               <label for="message">Message: </label>
-              <textarea name="message" id="message" cols="30" rows="10" maxlength="280"></textarea>
-              <input id="submit" type="button" value="Submit">
+              <textarea name="Message" id="message" cols="30" rows="10" maxlength="280"></textarea>
+              <input type="submit" id="submit" type="button" value="Send">
             </form>
 
         </article>
