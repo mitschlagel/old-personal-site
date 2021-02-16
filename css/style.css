@@ -339,8 +339,25 @@ img.rounded {
 }
 
 .music-header {
-  text-align: justify;
   padding-right: 5vw;
+}
+
+.music-info {
+  text-align: justify;
+}
+
+.music-header a {
+  font-size: 1rem;
+  padding: 0;
+}
+
+.music-link > a {
+  color:rgb(46, 102, 176);
+  font-weight: bold;
+}
+
+.music-link > a:hover {
+  text-decoration: underline;
 }
 
 .media {

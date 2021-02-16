@@ -41,6 +41,7 @@
   background-color: #fff;
   width: 100vw;
   height: 5vh;
+  z-index: 1;
 }
 
 .mobile-banner h1 {
@@ -202,8 +203,12 @@ img.rounded {
 }
 
 .media {
-  width: 80vw;
+  display: none;
 }
+
+/********************************
+*          Contact                *
+********************************/
 
 .contact-form {
   width: 80vw;
