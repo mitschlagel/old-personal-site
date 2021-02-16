@@ -366,9 +366,13 @@ img.rounded {
   justify-content: flex-start;
 }
 
+.media > p {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 .spotify iframe {
   border: 1px solid #000;
-  height: 280px;
 }
 
 .youtube-container {
